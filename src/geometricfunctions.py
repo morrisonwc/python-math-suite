@@ -22,3 +22,8 @@ def triangleArea(side_a, side_b, side_c):
     area = math.sqrt(semiperimeter * (semiperimeter - side_a) * (semiperimeter - side_b) * (semiperimeter - side_c))
     return area
 
+def quadraticFormula(value_a, value_b, value_c):
+    disc_root = math.sqrt(value_b * value_b - 4 * value_a * value_c)
+    root1 = (-value_b + disc_root) / (2 * value_a)
+    root2 = (-value_b - disc_root) / (2 * value_a)
+    return root1, root2
